@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #035e73, #0780ab);
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 2px 4px 16px rgb(0, 0, 0);
+}
+.login-form {
+  padding: 2rem;
+  background-color: #ffffff;
+  flex: 1;
+}
+.login-image {
+  display: none;
+}
+.login-form h2 {
+  margin-bottom: 1.5rem;
+}
+.login-form .btn-primary {
+  background-color: #116582;
+  border: none;
+  margin-top: 1rem;
+}
+.login-form .btn-primary:hover {
+  background-color: #0d3542;
+}
+.login-form .btn-google {
+  border-color: #116582;
+  color: #116582;
+  margin-top: 1rem;
+}
+.login-form .btn-google:hover {
+  background-color: #0d3542;
+  color: #fff;
+}
+.login-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.login-footer a {
+  color: #104b5f;
+  text-decoration: none;
+}
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .login-container {
+      flex-direction: row;
+  }
+  .login-form {
+      width: 50%;
+      padding: 3rem;
+  }
+  .login-image {
+      display: block;
+      width: 50%;
+      background: url('img/login-portada.png') no-repeat center center/cover;
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

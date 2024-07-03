@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(to right, #035e73, #0780ab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 16px rgb(0, 0, 0);
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 1.5rem;
+}
+
+.login-card .form-floating {
+  margin-bottom: 1rem;
+}
+
+.login-card .btn-primary {
+  background: linear-gradient(to right, #035e73, #0780ab, #0ca4db);
+  border: none;
+}
+
+.login-card .btn-primary:hover {
+  background: linear-gradient(to right, #035e73, #0780ab);
+  opacity: 0.9;
+}
+
+.login-card .social-buttons a {
+  width: 100%;
+  margin: 0.25rem 0;
+}
+.login-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.login-footer a {
+  color: #104b5f;
+  text-decoration: none;
+}
+.login-footer a:hover {
+  text-decoration: underline;
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
